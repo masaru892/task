@@ -45,8 +45,6 @@ print_r($sports);
 echo PHP_EOL;
 
 print("#####q5#####".PHP_EOL);
-$array1 = [];
-$array2 = [1, 5, 8, 10];
 
 # 以下に回答を記載
 $array1 = [];
