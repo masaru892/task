@@ -5,7 +5,10 @@ print("#####q1#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
   # 以下に回答を記載
-
+$names[] = "斎藤";
+foreach ($names as $name) {
+  echo $name;
+}
 echo PHP_EOL;
 
 print("#####q2#####".PHP_EOL);
