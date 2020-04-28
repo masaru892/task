@@ -26,9 +26,9 @@ $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9];
 # 以下に回答を記載
 $count = 0;
 foreach ($numbers as $number) {
-  if ($number === 3) {
-  $count++;
-  }
+if ($number === 3) {
+$count++;
+}
 }
 
 print_r($count.'回');
@@ -49,13 +49,13 @@ print("#####q5#####".PHP_EOL);
 # 以下に回答を記載
 $array1 = [];
 if (empty($array1)) {
-  print_r ('true');
+print_r ('true');
 }
 echo PHP_EOL;
 
 $array2 = [1, 5, 8, 10];
 if (!empty($array2)) {
-  print_r ('false');
+print_r ('false');
 }
 echo PHP_EOL;
 
@@ -67,8 +67,8 @@ $numbers1 = [1, 2, 3, 4, 5];
 
 $numbers2 = [];
 foreach ($numbers1 as $number) {
-  $number *= 10;
-  array_push ($numbers2, $number);
+$number *= 10;
+array_push ($numbers2, $number);
 }
 print_r ($numbers2);
 
@@ -78,7 +78,7 @@ print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
 # 以下に回答を記載
-$array =  array_map('intval', $array);
+$array = array_map('intval', $array);
 print_r ($array);
 
 echo PHP_EOL;
@@ -104,9 +104,9 @@ $names = ["田中", "佐藤", "佐々木", "高橋"];
 # 以下に回答を記載
 $names2 = [];
 foreach ($names as $key => $name) {
-  $number = $key + 1;
-  $name2 = "会員No.".$number." ".$name;
-  array_push ($names2,$name2);
+$number = $key + 1;
+$name2 = "会員No.".$number." ".$name;
+array_push ($names2,$name2);
 }
 
 print_r ($names2);
@@ -117,6 +117,13 @@ print("#####q10#####".PHP_EOL);
 $foods = ["いか","たこ","うに","しゃけ","うにぎり","うに軍艦","うに丼"];
 
 # 以下に回答を記載
+foreach ($foods as $food) {
+  if (preg_match("/うに/", $food)) {
+    print ("好物です。");
+  } else {
+    print ("まあまあ好きです。");
+  }
+}
 
 echo PHP_EOL;
 
