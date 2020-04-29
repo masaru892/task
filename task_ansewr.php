@@ -151,7 +151,7 @@ foreach($sports as $key => $sport){
     if(is_array($sport)){
         $sports2 = array_merge($sports2,$sport);
     }else{
-        array_push($sports2,$sport);
+        array_push($sports2, $sport);
     }
 }
 $sports2 = array_unique($sports2);
